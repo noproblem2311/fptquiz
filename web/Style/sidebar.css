@@ -1,0 +1,33 @@
+.sidebar {
+    z-index: 1;
+  padding-top: 60px;
+  width: 100%;
+  max-width: 280px;
+  height: calc(100%-140px);
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-between;*/
+  align-items: center;
+  gap: 54px;
+}
+
+.sidebar__item {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  width: 100%;
+  max-width: 230px;
+}
+
+.sidebar__item-icon {
+  color: #696f79;
+  font-size: 20px;
+}
+
+.sidebar__item-list {
+  color: #696f79;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+}

@@ -1,0 +1,154 @@
+* {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+
+}
+section{
+    position: absolute;
+    top: 80px;
+    margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+
+}
+
+.view {
+    display: flex;
+}
+.body {
+    height: 100%;
+    max-width: 1160px;
+    width: 100%;
+    padding: 30px 30px;
+    background-color: #FEF4F4;
+    height: 100%;
+}
+
+.body__gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 20px;
+    justify-content: center;
+    align-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.body__content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.body__content-tiltle {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 50px;
+    color: #696f79;
+}
+
+.gallary-item {
+    position: relative
+}
+.gallary-item-img {
+    height: 150px;
+    width: 250px;
+}
+.gallary-item-name{
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    bottom: 16px;
+    left: 20px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #F65151;
+}
+
+.body__content-depcriptions {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #696f79;
+}
+
+.card {
+  width: 300px;
+  height: 220px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+}
+
+.card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card:hover .card-body {
+  right: 0;
+}
+
+.card-body {
+  transition: 0.5s linear;
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background-color: #1f3d4738;
+  backdrop-filter: blur(5px);
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 28px;
+}
+
+.card-info {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 20px 0;
+  font-weight: 400;
+}
+
+.card-button {
+  padding: 10px 20px;
+  color: #082032;
+  background-color: #f65151;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  float: right;
+}
+
+.card-button a {
+  text-transform: capitalize;
+  color: #082032;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 16px;
+}
